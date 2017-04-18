@@ -1,5 +1,5 @@
 # Docs: https://caddyserver.com/docs/caddyfile
-0.0.0.0:80
+https://mars.dev
 root /var/www/public
 fastcgi / php-fpm:9000 php {
     index index.php
@@ -19,7 +19,7 @@ log /var/log/caddy/access.log
 errors /var/log/caddy/error.log
 # Uncomment to enable TLS (HTTPS)
 # Change the first list to listen on port 443 when enabling TLS
-#tls self_signed
+tls kevin@clooser.nl
 
 # To use Lets encrpt tls with a DNS provider uncomment these
 # lines and change the provider as required
